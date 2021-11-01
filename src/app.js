@@ -3,6 +3,7 @@ console.log("Merhaba Kodlama.io")
 //JS type safe değildir
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 let dolarBugun = 9.30
 let dolarDun = 9.20
@@ -41,6 +42,8 @@ console.log("</ul>")
 =======
 =======
 >>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
+=======
+>>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
 let dolarBugun = 9.30
 
 let dolarDun = 9.20
@@ -74,6 +77,10 @@ console.log("</ul>")
 </ul> */}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+console.log(konutKredileri)
+>>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
+=======
 console.log(konutKredileri)
 >>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
 =======

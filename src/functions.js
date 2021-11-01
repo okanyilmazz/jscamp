@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* console.log("sepete eklendi!")
 
 console.log("sepete eklendi!")
@@ -52,6 +53,8 @@ function  addToCart2(productName,quantity,unitPrice) {
 =======
 =======
 >>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
+=======
+>>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
 function addToCart(quantity,productName="Elma") {
     console.log("Sepete eklendi : ürün : " 
     + productName + " adet : " + quantity)
@@ -75,6 +78,9 @@ sayHello2();
 
 function addToCart2(productName, quantity, unitPrice) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
+=======
 >>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
 =======
 >>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
@@ -84,6 +90,7 @@ function addToCart2(productName, quantity, unitPrice) {
 addToCart2("Elma",5,10)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 addToCart2("Armut",2,20)
 addToCart2("Limon",3,15)
 
@@ -91,6 +98,11 @@ addToCart2("Limon",3,15)
 
 
 //obje tanımı = {} ' dir
+=======
+addToCart2("Armut", 2, 20)
+addToCart2("Limon",3,15)
+
+>>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
 =======
 addToCart2("Armut", 2, 20)
 addToCart2("Limon",3,15)
@@ -114,6 +126,7 @@ addToCart3(product1)
 
 let product2 = {productName:"Elma", unitPrice:10, quantity:5}
 let product3 = {productName:"Elma", unitPrice:10, quantity:5}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -153,6 +166,8 @@ function addToCart5(products) {
 =======
 =======
 >>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
+=======
+>>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
 product2 = product3
 product2.productName = "KARPUZ"
 console.log(product3.productName)
@@ -165,6 +180,9 @@ console.log(sayi1)
 
 function addToCart4(products) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
+=======
 >>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
 =======
 >>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
@@ -175,6 +193,7 @@ let products = [
     {productName:"Elma", unitPrice:10, quantity:5},
     {productName:"Armut", unitPrice:10, quantity:5},
     {productName:"Karpuz", unitPrice:10, quantity:5}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -221,6 +240,8 @@ function add4(bisey,...numbers) { // rest budur.
 =======
 =======
 >>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
+=======
+>>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
 ]
 
 addToCart4(products)
@@ -230,6 +251,9 @@ function add(bisey,...numbers) { //rest
     for (let i = 0; i < numbers.length; i++) {
         total = total + numbers[i]
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
+=======
 >>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
 =======
 >>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
@@ -238,6 +262,7 @@ function add(bisey,...numbers) { //rest
     console.log(bisey)
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 add4(20,30)
@@ -281,6 +306,8 @@ console.log(newQuantity)
 =======
 =======
 >>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
+=======
+>>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
 add(20,30)
 //add(20,30, 40)
 //add(20,30, 40, 50)
@@ -313,6 +340,9 @@ console.log(newUnitPrice)
 console.log(newQuantity)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
+=======
 >>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
 =======
 >>>>>>> 913ee0044458ba0401b6785ff179f907b3fb0c1e
