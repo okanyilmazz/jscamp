@@ -37,7 +37,6 @@ sayHello()
 let SayHello2= function () {
     console.log("Hello World2!")
 }
-
 SayHello2();
 
 
@@ -45,8 +44,6 @@ SayHello2();
 //22.10 
 //birden fazla parametreyi göönderirsek tavsite etmeyiz.
 
-
-function  addToCart2(productName,quantity,unitPrice) {
 
 function addToCart(quantity,productName="Elma") {
     console.log("Sepete eklendi : ürün : " 
@@ -56,18 +53,6 @@ function addToCart(quantity,productName="Elma") {
 //addToCart()
 addToCart(10)
 //addToCart(15)
-
-let sayHello = ()=>{
-    console.log("Hello World!")
-}
-
-sayHello()
-
-let sayHello2 = function () {
-    console.log("Hello World 2")
-}
-
-sayHello2();
 
 function addToCart2(productName, quantity, unitPrice) { 
 }
@@ -137,152 +122,122 @@ let products = [
 ]
 addToCart4(products)
 
+
 /*
-function addToCart5(products) {
-
-product2 = product3
-product2.productName = "KARPUZ"
-console.log(product3.productName)
-
-let sayi1 = 10
-let sayi2 = 20
-sayi1 = sayi2
-sayi2 = 100
-console.log(sayi1)
-
-function addToCart4(products) {
-    console.log(products)
+function add(number1,number2) {
+    console.log(number1 + number2)
 }
-
-let products = [
-    {productName:"Elma", unitPrice:10, quantity:5},
-    {productName:"Armut", unitPrice:10, quantity:5},
-    {productName:"Karpuz", unitPrice:10, quantity:5}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-]
-addToCart5(products)
+add(20,30)
 */
 
-function add(number1,number2){
-    console.log(number1+number2)
-}
 
+// .... dendiği zaman gönderilen parametleri array içerisine alıyor 
+
+
+/*
+function add(...numbers) { //  ... = rest operatörü deniyor 
+    let total=0;
+    console.log(numbers)
+    for (let i = 0; i < numbers.length; i++) {
+       console.log(numbers[i])
+
+       total=total+numbers[i]
+        
+    }
+    console.log(total)
+}
+add(20,30)
+add(20,30,40)
+add(20,30,40,50)
+*/
+//rest her zaman fonksiyonun sonuna bırakılmalıdır. ÖRNEK ; 
+
+function add(bisey,...numbers) { //  ... = rest operatörü deniyor 
+    let total=0;
+    console.log(numbers)
+    for (let i = 0; i < numbers.length; i++) {
+       console.log(numbers[i])
+
+       total=total+numbers[i]
+        
+    }
+    console.log(total)
+    console.log(bisey)
+}
 add(20,30)
 
-
-function add2(...numbers) { // rest budur.
-    let total=0;
-    for (let i = 0; i < numbers.length; i++) {
-        total=total+numbers[i]
-    }
-    console.log(total)
-}
-
-add2(20,30)
-add2(20,30,40)
-add2(20,30,40,50)
-
-/*
-function add3(...numbers,bisey) { // rest budur.
-    let total=0;
-    for (let i = 0; i < numbers.length; i++) {
-        total=total+numbers[i]
-    }
-    console.log(total)
-    console.log(bisey)
-}
-
-add3(20,30)
-*/
-
-function add4(bisey,...numbers) { // rest budur.
-    let total=0;
-    for (let i = 0; i < numbers.length; i++) {
-        total=total+numbers[i]
-    }
-}
-
-addToCart4(products)
-
-function add(bisey,...numbers) { //rest
-    let total = 0;
-    for (let i = 0; i < numbers.length; i++) {
-        total = total + numbers[i]
-    }
-    console.log(total)
-    console.log(bisey)
-}
-
-add4(20,30)
-
-console.log(Math.max(30,10,500,600,120))
-
-let numbers=[30,10,500,600,120]
-console.log(...numbers)
-
+let numbers=[30,10,500,600,120] 
+console.log(numbers)
+console.log(...numbers) //... => ayrıştır demek 
 console.log(Math.max(...numbers))
-
-
 
 
 
 let regions = ["İç Anadolu","Marmara","Karadeniz"]
 console.log(regions[1])
 
-let [icAnadolu,marmara,karadeniz,[icAnadoluSehirleri,marmaraSehirleri,karadenizSehirleri]] = [
-    {name:"İç Anadolu", population:"20M"},
+
+// => değişkenlere aktarmak istiyoruz.
+
+// 1. ÖRNEK ------------
+
+/*
+let [icAnadolu,marmara,karadeniz] = ["İç Anadolu","Marmara","Karadeniz"]
+console.log(icAnadolu)
+console.log(marmara)
+*/
+
+// 2. ÖRNEK ------------
+
+/*
+let[icAnadolu,marmara]=[
+    {name:"İç Anadolu",population:"20M"},
+    {name:"Marmara",population:"30M"},
+    {name:"Karadeniz",population:"10M"},
+]
+
+
+console.log(icAnadolu)
+console.log(marmara)
+console.log(icAnadolu.name)
+console.log(icAnadolu.population)
+*/
+
+
+// 3. ÖRNEK ---------------
+
+let[icAnadolu,marmara,karadeniz,[icAnadoluSehirleri,marmaraSehirleri]]=[
+    {name:"İç Anadolu",population:"20M"},
     {name:"Marmara",population:"30M"},
     {name:"Karadeniz",population:"10M"},
     [
         ["Ankara","Konya"],
         ["İstanbul","Bursa"],
-        ["Sinop","Trabzon"]
+        ["Sinop","Trabzon"],
+        
     ]
 ]
-//console.log(icAnadolu.name)
-//console.log(icAnadolu.population)
 
+
+console.log(icAnadolu.name)
+console.log(icAnadolu.population)
 console.log(icAnadoluSehirleri)
 console.log(marmaraSehirleri)
-console.log(karadenizSehirleri)
 
-let newProductName,newUnitPrice,newQuantity
-({productName:newProductName,unitPrice:newUnitPrice,quantity:newQuantity}={productName:"Elma",unitPrice:4,quantity:5})
+
+
+
+// 4. ÖRNEK -----------------
+/*
+let product5 = {productName:"Elma",unitPrice:10,quantity:5}
+console.log(productName)
+*/
+
+
+let newProductName,newUnitPrice,newQuantity 
+// ( parantez içerisinde yazarken sen kod bloğu değilsin demek istiyoruz.)
+({productName:newProductName,unitPrice:newUnitPrice,quantity:newQuantity} 
+= {productName:"Elma",unitPrice:10,quantity:5})
 console.log(newProductName)
 console.log(newUnitPrice)
 console.log(newQuantity)
-
-add(20,30)
-//add(20,30, 40)
-//add(20,30, 40, 50)
-
-let numbers = [30,10,500,600,120]
-//console.log(...numbers)
-console.log(Math.max(...numbers))
-
-let [icAnadolu,marmara,karadeniz,[icAnadoluSehirleri]] = [
-    {name:"İç Anadolu", population:"20M"},
-    {name:"Marmara", population:"30M"},
-    {name:"Karadeniz", population:"10M"},
-    [
-        ["Ankara","Konya"],
-        ["İstanbul","Bursa"],
-        ["Sinop","Trabzon"],
-    ]
-]
-
-// console.log(icAnadolu.name)
-// console.log(icAnadolu.population)
-console.log(icAnadoluSehirleri)
-
-let newProductName, newUnitPrice, newQuantity
-({productName:newProductName, unitPrice:newUnitPrice, quantity:newQuantity } 
-= {productName:"Elma", unitPrice:10, quantity:5})
-
-console.log(newProductName)
-console.log(newUnitPrice)
-console.log(newQuantity)
-}
