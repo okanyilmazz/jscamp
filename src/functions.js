@@ -88,13 +88,14 @@ function addToCart3(product) {
 
 addToCart3(product1)
 
+/*
 let product2 = {productName:"Elma", unitPrice:10, quantity:5}
 let product3 = {productName:"Elma", unitPrice:10, quantity:5}
 
 product2=product3
 product2.productName="KARPUZ"
 console.log(product3.productName)
-
+*/
 
 let sayi1=10
 let sayi2=20
@@ -110,6 +111,7 @@ console.log(sayi1)
 
 // içerisinde products bulamazsa bir üst scopa odaklanır ve ürünleri yine yazar.
 
+/*
 function addToCart4(x) {
     console.log(products)
 }
@@ -121,7 +123,7 @@ let products = [
 
 ]
 addToCart4(products)
-
+*/
 
 /*
 function add(number1,number2) {
@@ -133,8 +135,8 @@ add(20,30)
 
 // .... dendiği zaman gönderilen parametleri array içerisine alıyor 
 
-
 /*
+
 function add(...numbers) { //  ... = rest operatörü deniyor 
     let total=0;
     console.log(numbers)
@@ -151,7 +153,7 @@ add(20,30,40)
 add(20,30,40,50)
 */
 //rest her zaman fonksiyonun sonuna bırakılmalıdır. ÖRNEK ; 
-
+/*
 function add(bisey,...numbers) { //  ... = rest operatörü deniyor 
     let total=0;
     console.log(numbers)
@@ -165,17 +167,18 @@ function add(bisey,...numbers) { //  ... = rest operatörü deniyor
     console.log(bisey)
 }
 add(20,30)
-
+*/
+/*
 let numbers=[30,10,500,600,120] 
 console.log(numbers)
 console.log(...numbers) //... => ayrıştır demek 
 console.log(Math.max(...numbers))
+*/
 
-
-
+/*
 let regions = ["İç Anadolu","Marmara","Karadeniz"]
 console.log(regions[1])
-
+*/
 
 // => değişkenlere aktarmak istiyoruz.
 
@@ -205,7 +208,7 @@ console.log(icAnadolu.population)
 
 
 // 3. ÖRNEK ---------------
-
+/*
 let[icAnadolu,marmara,karadeniz,[icAnadoluSehirleri,marmaraSehirleri]]=[
     {name:"İç Anadolu",population:"20M"},
     {name:"Marmara",population:"30M"},
@@ -224,7 +227,7 @@ console.log(icAnadolu.population)
 console.log(icAnadoluSehirleri)
 console.log(marmaraSehirleri)
 
-
+*/
 
 
 // 4. ÖRNEK -----------------
@@ -241,3 +244,5 @@ let newProductName,newUnitPrice,newQuantity
 console.log(newProductName)
 console.log(newUnitPrice)
 console.log(newQuantity)
+
+
